@@ -1,0 +1,182 @@
+$black: #262626;
+.intro {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    &-left , &-right {
+        width: 50%;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-text {
+        height: 50%;
+        margin-left: 100px;
+        h3 {
+            font-size: 30px;
+            font-weight: 400;
+            color: #211c19;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 55px;
+            margin-bottom: 25px;
+        }
+        p {
+            width: 100%;
+            margin-top: 40px;
+            font-size: 18px;
+            line-height: 1.7;
+            font-weight: 400;
+            color: #575757;
+            max-width: 90%;
+        }
+    }
+    &-title {
+        height: 60px;
+        overflow: hidden;
+        &-wrapper {
+            height: 100%;
+            animation: move 7s ease-in-out infinite alternate;
+        }
+        &-item {
+            height: 60px;
+            font-size: 30px;
+            font-weight: 700;
+            color: #59b256;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &-right {
+        position: relative;   
+    }
+    &-bg {
+        z-index: 0;
+        clip-path: polygon(17% 0, 100% 0%, 100% 100%, 16% 100%, 0% 50%);
+        background-color: #59b256;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &-wrapperImg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            position: absolute;
+            height: 40%;
+            width: 50%;
+            object-fit: cover;
+            transform: translate(20%,20%);
+            z-index: 999;
+            border-radius: 10px;
+        }
+        div {
+            height: 40%;
+            width: 50%;    
+            position: relative;
+            // background-color: #40803d;
+            // opacity: 0.4;
+            background: rgba(#40803d, 0.5);
+            z-index: 555;
+            border-radius: 10px;
+            overflow: hidden;
+            .border{
+                background : rgba(#7dc77a, 0.9);
+              }
+            
+              .top {
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                width: 0;
+                height: 5px;
+                margin: auto;
+                opacity: 0;
+                transition: all .2s linear .3s;
+              }
+              
+              &:hover .top {
+                left: 0;
+                width: 100%;
+                opacity: 1;
+                transition: all .2s linear;
+              }
+            
+              .right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 3px;
+                height: 0;
+                margin: auto;
+                transition: all .1s linear .2s;
+                }
+              
+              .left {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 0;
+                margin: auto;
+                transition: all .1s linear .2s;
+              }
+              
+              &:hover .right, &:hover .left {
+                transition: all .1s linear .2s;
+                height: 100%;
+              }
+            
+              .bottom-left {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 5px;
+                margin: auto;
+                transition: all .2s linear;
+              }
+              
+              .bottom-right {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 5px;    
+                margin: auto;
+                transition: all .2s linear;
+              }
+              
+              &:hover .bottom-left, &:hover .bottom-right {
+                transition: all .2s linear .3s;
+                width: 100%;
+              }
+        }
+       
+    }
+}
+
+
+@keyframes move {
+    25% {
+      transform: translateY(-60px);
+    }
+    50% {
+      transform: translateY(-120px);
+    }
+    75% {
+      transform: translateY(-180px);
+    }
+    100% {
+      transform: translateY(-240px);
+    }
+  }
