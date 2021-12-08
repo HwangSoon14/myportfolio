@@ -45,9 +45,23 @@ const About = () => {
                     </div>
                      {(value === 1)
                          ?
-                            <TabDesc  desc="education"/>
+                            <TabDesc  
+                                desc="my educationnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnn"
+
+                                />
                          : 
-                            <TabDesc  desc="experience"/>
+                            <TabDesc  
+                                desc="my experiencennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                                nnnnnnnnnnnnnnnnnnnnnnnnnn"
+                                    
+                                />
                          } 
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Introduce.scss";
 import Me from "../../img/me.jpg"
+import Dracula from "../Dracula/Dracula";
 const Introduce = () => {
   return (
     <div className="intro">
@@ -21,6 +22,9 @@ const Introduce = () => {
         </div>
       </div>
       <div className="intro-right">
+
+        <Dracula className="i-dra"/>
+
         <div className="intro-bg"></div>
         {/* <img src={Me} alt="myself" /> */}
         {/* <div className="intro-wrapperImg">
